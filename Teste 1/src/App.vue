@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+//import novoNome from './components/adicionarPessoa.vue';
 
 class pessoa {
   constructor(nome, idade, profissao) {
@@ -35,13 +36,34 @@ function ant() {
 
 <template>
   <div class="all">
-    <div class="">{{ pessoaAtual.nome }}</div>
-    <div class="">{{ pessoaAtual.idade }}</div>
-    <div>{{ pessoaAtual.profissao }}</div>
+    <div class="info">
+      <div class="infoPeca">{{ pessoaAtual.nome }}</div>
+      <div class="infoPeca">{{ pessoaAtual.idade }}</div>
+      <div class="infoPeca">{{ pessoaAtual.profissao }}</div>
+    </div>
 
-    <button @click="ant">Anterior</button>
-    <button @click="prox">Próximo</button>
+    <button class="btn" @click="ant">Anterior</button>
+    <button class="btn" @click="prox">Próximo</button>
+    <button class="btn add">+</button>
+
+    //<div>{{ novoNome }}</div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+  .info{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .info>div{
+    border-bottom: 1px solid white;
+  }
+  .btn {
+    background-color: grey;
+    color: aliceblue;
+  }
+
+</style>
