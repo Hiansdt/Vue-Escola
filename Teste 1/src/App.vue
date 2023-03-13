@@ -1,3 +1,4 @@
+// Teste info pessoas
 <script setup>
 import { ref } from 'vue'
 //import novoNome from './components/adicionarPessoa.vue';

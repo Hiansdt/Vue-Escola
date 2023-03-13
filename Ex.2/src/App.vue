@@ -1,6 +1,5 @@
+//Exercício pessoas e nomes
 <script setup>
-import { ref } from 'vue'
-
 const nome = 'Vinícius'
 const idade = 16
 
@@ -18,9 +17,9 @@ function inverterTexto(texto) {
     <div class="outro">
       <div>Anos para completar 50: {{ 50 - idade }} anos</div>
       <div>O nome tem {{ nome.split('').length }} letras</div>
-      <div>O nome invertido é {{ inverterTexto(nome)}}</div>
+      <div>O nome invertido é {{ inverterTexto(nome) }}</div>
     </div>
-  </div>  
+  </div>
 </template>
 
 <style scoped>

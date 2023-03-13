@@ -1,3 +1,5 @@
+//Exercício operações matemáticas
+
 <script>
 export default {
   data() {
@@ -30,7 +32,7 @@ export default {
       <input type="number" v-model="numeroSomar1">
       <input type="number" v-model="numeroSomar2"> <br>
       {{ somar() }}
-      <div v-if="(somar()%2 == 0)">A soma é par</div> 
+      <div v-if="(somar()%2 == 0)">A soma é par</div>
       <div class="somaMaiorQue10" v-if="(somar() > 10)">A soma é maior que 10</div>
     </div>
   </div>
